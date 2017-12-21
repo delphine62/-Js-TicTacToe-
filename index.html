@@ -5,29 +5,40 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css"/>
       <title>challenge tic tac toe</title>
-    <html>
-    <head>
     </head>
-    <body
+    <body>
+      <div>
+      <h1>TIC TAC TOE</h1>
+      </div>
 
-    <div></div>
-      <h1> tic tac toe </h1>
-      <div class="3buttons">
-        <div>
-        <button></button>
-        <button></button>
-        <button></button>
-      </div>
-      <div>
-        <button></button>
-        <button></button>
-        <button></button>
-      </div>
-      <div>
-          <button></button>
-          <button></button>
-          <button></button>
-        </div>
+    <div>
+      <table>
+      <tr>
+      <td class="id"onclick="jouer(1)" id="1"></td>
+      <td class="id"onclick="jouer(2)" id="2"></td>
+      <td class="id"onclick="jouer(3)" id="3"></td>
+      </tr>
+      <td class="id"onclick="jouer(4)" id="4"></td>
+      <td class="id"onclick="jouer(5)" id="5"></td>
+      <td class="id"onclick="jouer(6)" id="6"></td>
+      <tr>
+      <td class="id"onclick="jouer(7)" id="7"></td>
+      <td class="id"onclick="jouer(8)" id="8"></td>
+      <td class="id"onclick="jouer(9)" id="9"></td>
+      </tr>
+  </table>
+</div>
+
+
+
+
+
+      <script type="text/javascript">
+    function jouer(nbr){
+      document.getElementById(nbr).classList.add("player2");
+    }
+
+      </script>
 
 
 
